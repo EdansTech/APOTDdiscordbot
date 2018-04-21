@@ -1,6 +1,9 @@
 # SpaceBot
 This makes the command #image and posts it using the NASA API    
 
+# We are now hosted!
+Add our bot at https://discordapp.com/oauth2/authorize?client_id=437218042544390144&scope=bot
+
 # How to use
 At the moment we are not hosing this bot but you can host it youself just open the file with any text editor and scroll down to the settings part then put in your information then upload the bot to a server where it can be hosted!
 
