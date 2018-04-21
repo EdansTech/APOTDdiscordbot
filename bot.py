@@ -40,9 +40,9 @@ import random
 # Settings for the bot to run and work
 
 #Bot token
-bottoken = "YourDiscordBotTokenHere"
+bottoken = "BOT TOKEN"
 #NASA API key
-apikey = "YourNASAAPIKey"
+apikey = "NASA API KEY"
 #Bot command prefix
 commandprefix = "#"
 #Hd image mode (May take longer to load image on slower connections)
@@ -56,12 +56,8 @@ hd = "true"
 #  \_____\___/ \__,_|\___|
 # Dont go past here unless you know what you are doing                        
 
-#There is probobly a acctual way to do this
-true = "true"
-false = "false"
-
 #Toggles HD mode
-if hd == true:
+if hd == True:
     hdmodetoggle = "hdurl"
 else:
     hdmodetoggle = "url"
@@ -121,4 +117,3 @@ bot.run(bottoken)
 # |______|_| |_|\__,_|
 #
 # You have reached the end                     
-                     
