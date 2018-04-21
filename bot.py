@@ -78,7 +78,7 @@ bot = commands.Bot(command_prefix=commandprefix)
 @bot.event
 async def on_ready():
     print ("Starting up")
-    print ("My username is " + bot.user.name + " and i am runing with the ID: " + bot.user.id)
+    print ("My username is " + bot.user.name + " and i am running with the ID: " + bot.user.id)
     print ("Started")
 
 #Image command #image
