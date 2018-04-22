@@ -64,15 +64,6 @@ if hd == true:
 else:
     hdmodetoggle = "url"
 
-#Makes the API work
-r = requests.get("https://api.nasa.gov/planetary/apod?api_key="+ apikey )
-json_object = r.json()
-copyright1 = (json_object['copyright'])
-title = (json_object['title'])
-explanation = (json_object['explanation'])
-url = (json_object[hdmodetoggle])
-date = (json_object['date'])
-
 #Making bot command the same one as set in the settings above
 bot = commands.Bot(command_prefix=commandprefix)
 
@@ -83,9 +74,20 @@ async def on_ready():
     print ("My username is " + bot.user.name + " and i am running with the ID: " + bot.user.id)
     print ("Started")
 
+bot.remove_command('help')
+
 #Image command #image
 @bot.command(pass_context=True)
+@commands.cooldown(1.0, 30.0, commands.BucketType.default)
 async def image(ctx):
+    #Makes the image API work
+    r = requests.get("https://api.nasa.gov/planetary/apod?api_key="+ apikey )
+    json_object = r.json()
+    copyright1 = (json_object['copyright'])
+    title = (json_object['title'])
+    explanation = (json_object['explanation'])
+    url = (json_object[hdmodetoggle])
+    date = (json_object['date'])
     await bot.say("Copyright: "+ copyright1)
     await bot.say("Title: "+ title)
     await bot.say("Explanation: "+ explanation)
@@ -93,14 +95,18 @@ async def image(ctx):
     await bot.say(date)
     print ("Image posted")
 
-#Test if bot commands are working #test
+#Help command #help
 @bot.command(pass_context=True)
-async def test(ctx):
-    await bot.say("Test")
-    print ("Test posted")
+@commands.cooldown(1.0, 30.0, commands.BucketType.default)
+async def help(ctx):
+    await bot.say("Help:")
+    await bot.say("#image - Displays NASAs random image of the day")
+    await bot.say("#credits - Displays bot credits")
+    print ("Help posted")
     
 #Credits
 @bot.command(pass_context=True)
+@commands.cooldown(1.0, 30.0, commands.BucketType.default)
 async def credits(ctx):
     await bot.say("Bot made by EdansTech")
     await bot.say("https://edanstech.pw")
