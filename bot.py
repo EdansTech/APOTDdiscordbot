@@ -84,12 +84,10 @@ async def image(ctx):
     #Makes the image API work
     r = requests.get("https://api.nasa.gov/planetary/apod?api_key="+ apikey )
     json_object = r.json()
-    copyright1 = (json_object['copyright'])
     title = (json_object['title'])
     explanation = (json_object['explanation'])
     url = (json_object[hdmodetoggle])
     date = (json_object['date'])
-    await bot.say("Copyright: "+ copyright1)
     await bot.say("Title: "+ title)
     await bot.say("Explanation: "+ explanation)
     await bot.say(url)
