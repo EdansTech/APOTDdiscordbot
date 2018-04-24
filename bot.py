@@ -64,6 +64,10 @@ if hd == true:
 else:
     hdmodetoggle = "url"
 
+#Gets the API
+r = requests.get("https://api.nasa.gov/planetary/apod?api_key="+ apikey )
+json_object = r.json()
+
 #Making bot command the same one as set in the settings above
 bot = commands.Bot(command_prefix=commandprefix)
 
@@ -81,18 +85,28 @@ bot.remove_command('help')
 @bot.command(pass_context=True)
 @commands.cooldown(1.0, 30.0, commands.BucketType.default)
 async def image(ctx):
-    #Makes the image API work
-    r = requests.get("https://api.nasa.gov/planetary/apod?api_key="+ apikey )
-    json_object = r.json()
-    title = (json_object['title'])
-    explanation = (json_object['explanation'])
-    url = (json_object[hdmodetoggle])
-    date = (json_object['date'])
-    await bot.say("Title: "+ title)
-    await bot.say("Explanation: "+ explanation)
-    await bot.say(url)
-    await bot.say(date)
-    print ("Image posted")
+    media = (json_object['media_type'])
+    if media == "video":
+        #Makes video API work
+        explanation = (json_object['explanation'])
+        url = (json_object['url'])
+        date = (json_object['date'])
+        await bot.say ("Today it is a video not a image!")
+        await bot.say("Explanation: "+ explanation)
+        await bot.say(url)
+        await bot.say(date)
+        print ("Image posted")
+    else:
+        #Makes the image API work
+        title = (json_object['title'])
+        explanation = (json_object['explanation'])
+        url = (json_object[hdmodetoggle])
+        date = (json_object['date'])
+        await bot.say("Title: "+ title)
+        await bot.say("Explanation: "+ explanation)
+        await bot.say(url)
+        await bot.say(date)
+        print ("Image posted")
 
 #Help command #help
 @bot.command(pass_context=True)
