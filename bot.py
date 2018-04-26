@@ -85,6 +85,10 @@ bot.remove_command('help')
 @bot.command(pass_context=True)
 @commands.cooldown(1.0, 30.0, commands.BucketType.default)
 async def image(ctx):
+    #Gets the API
+    r = requests.get("https://api.nasa.gov/planetary/apod?api_key="+ apikey )
+    json_object = r.json()
+    #Checks if it is a video
     media = (json_object['media_type'])
     if media == "video":
         #Makes video API work
