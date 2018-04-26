@@ -64,10 +64,6 @@ if hd == true:
 else:
     hdmodetoggle = "url"
 
-#Gets the API
-r = requests.get("https://api.nasa.gov/planetary/apod?api_key="+ apikey )
-json_object = r.json()
-
 #Making bot command the same one as set in the settings above
 bot = commands.Bot(command_prefix=commandprefix)
 
