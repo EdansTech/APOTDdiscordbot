@@ -1,7 +1,7 @@
 # SpaceBot
 This makes the command #image and posts it using the NASA API    
 
-#Add the bot to your server:
+# Add the bot to your server:
 Add our bot at https://discordapp.com/oauth2/authorize?client_id=437218042544390144&scope=bot
 
 # How to use
