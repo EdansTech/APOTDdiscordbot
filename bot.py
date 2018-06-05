@@ -44,7 +44,7 @@ bottoken = "DISCORD BOT TOKEN"
 #NASA API key
 apikey = "NASA API KEY"
 #Bot command prefix
-commandprefix = "#"
+commandprefix = "!"
 #HD image mode (May take longer to load image on slower connections)
 hd = "true"
 
