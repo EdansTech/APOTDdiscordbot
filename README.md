@@ -1,5 +1,5 @@
 # SpaceBot
-This makes the command #image and posts it using the NASA API    
+This bot adds the #image command that gets NASAs random image of the day and then posts it to your discord server
 
 # Add the bot to your server:
 Add our bot at https://discordapp.com/oauth2/authorize?client_id=437218042544390144&scope=bot
