@@ -22,7 +22,7 @@ You are allowed to rename, rebrand etc aslong as credit to us (meaning edanstech
 This bot also must not be used commercially.
 
 # Credits
-Bot made by EdansTech
-https://edanstech.pw
-Official Supporter
-https://molepatrol.club
+Bot made by EdansTech:
+- https://edanstech.pw
+Official Supporter:
+- https://molepatrol.club
