@@ -46,7 +46,7 @@ apikey = "NASA API KEY"
 #Bot command prefix
 commandprefix = "!"
 #HD image mode (May take longer to load image on slower connections)
-hd = "true"
+hd = "True"
 
 #   _____          _      
 #  / ____|        | |     
@@ -57,9 +57,7 @@ hd = "true"
 # Dont go past here unless you know what you are doing                        
 
 #Toggles HD mode
-true = "true"
-false = "false"
-if hd == true:
+if hd == True:
     hdmodetoggle = "hdurl"
 else:
     hdmodetoggle = "url"
@@ -113,8 +111,8 @@ async def image(ctx):
 @commands.cooldown(1.0, 30.0, commands.BucketType.default)
 async def help(ctx):
     await bot.say("Help:")
-    await bot.say("#image - Displays NASAs random image of the day")
-    await bot.say("#credits - Displays bot credits")
+    await bot.say(commandprefix +"image - Displays NASAs random image of the day")
+    await bot.say(commandprefix +"credits - Displays bot credits")
     print ("Help posted")
     
 #Credits
@@ -137,4 +135,4 @@ bot.run(bottoken)
 # | |____| | | | (_| |
 # |______|_| |_|\__,_|
 #
-# You have reached the end                     
+# You have reached the end
