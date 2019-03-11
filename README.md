@@ -24,5 +24,6 @@ This bot also must not be used commercially.
 # Credits
 Bot made by EdansTech:
 - https://edanstech.pw
+
 Official Supporter:
 - https://molepatrol.club
