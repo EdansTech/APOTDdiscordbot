@@ -9,8 +9,16 @@ You can download and enter your own settings but the settings for our hosted are
 Command prefix: !
 HD mode: On
 
+# You will need
+Python 3.5 with the following python packages:
+Discord.py (pip3 install discord.py)
+Aysinc (pip3 install asyncio)
+Chalk (pip3 install pychalk)
+Requests (pip3 install requests)
+
 # Rights
 You are allowed to rename, rebrand etc aslong as credit to us (meaning edanstech.pw) is given and you do not claim this work to be yours
+This bot also must not be used commercially.
 
 # Credits
 Bot made by EdansTech
