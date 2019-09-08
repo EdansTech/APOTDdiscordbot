@@ -1,0 +1,5 @@
+{
+        "prefix": "!",
+        "token": "Discord bot token",
+        "nasaapi": "NASA api key"
+}
