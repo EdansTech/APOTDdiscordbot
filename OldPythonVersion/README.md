@@ -3,7 +3,7 @@ This bot adds the !image command that gets NASAs random image of the day and the
 
 # Add the bot to your server:
 Add our bot at https://discordapp.com/oauth2/authorize?client_id=437218042544390144&scope=bot
-
+(This bot link is now using the nodejs version)
 # How to use
 You can download and enter your own settings but the settings for our hosted are
 Command prefix: !
