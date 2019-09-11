@@ -16,6 +16,7 @@ const requestoptions = {
 };
 client.once('ready', () => {
         console.log('Ready')
+        client.user.setActivity('the stars', { type: 'WATCHING' });
 })
 
 client.on('message', message => {
