@@ -93,7 +93,7 @@ async def image(ctx):
         await bot.say("Explanation: "+ explanation)
         await bot.say(url)
         await bot.say(date)
-        print ("Image posted")
+        print ("Video posted")
     else:
         #Makes the image API work
         title = (json_object['title'])
@@ -120,7 +120,7 @@ async def help(ctx):
 @commands.cooldown(1.0, 30.0, commands.BucketType.default)
 async def credits(ctx):
     await bot.say("Bot made by EdansTech")
-    await bot.say("https://edanstech.pw")
+    await bot.say("https://edanstech.pw / http://egddev.com")
     await bot.say("Official Supporter")
     await bot.say("https://molepatrol.club")
     print ("Credits Posted")
