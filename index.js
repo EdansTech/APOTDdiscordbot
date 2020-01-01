@@ -1,5 +1,5 @@
 //     All config is now in the config.json file.
-//     Edan's Tech / 2019
+//     Edan's Tech / 2020
 //     https://egddev.com/spacebot
 const Discord = require('discord.js');
 const request = require('request');
