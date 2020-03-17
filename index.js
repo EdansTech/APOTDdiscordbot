@@ -33,14 +33,19 @@ client.on('message', message => {
         }
         if(message.content.startsWith(`${prefix}help`)) {
                 message.channel.send(`${prefix}space - Displays NASAs random image/video of the day`)
+                message.channel.send(`${prefix}invite - Displays the invite link`)
                 message.channel.send(`${prefix}credits - Displays the authors credits`)
                 console.log("Help posted")
         }
         if(message.content.startsWith(`${prefix}credits`)) {
-                message.channel.send("Bot made by EdansTech")
-                message.channel.send("https://edanstech.pw / https://egddev.com")
-                message.channel.send("Official Supporter")
+                message.channel.send("Bot made by:")
+                message.channel.send("https://egddev.com")
+                message.channel.send("Official Supporter:")
                 message.channel.send("https://molepatrol.club")
+                console.log("Credits posted")
+        }
+        if(message.content.startsWith(`${prefix}invite`)) {
+                message.channel.send("Here is the invite link: https://egddev.com/invitespacebot")
                 console.log("Credits posted")
         }
 })
