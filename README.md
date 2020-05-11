@@ -34,8 +34,8 @@ You are allowed to rename, rebrand etc as long as credit to us (meaning edanstec
 This bot also must not be used commercially.
 
 # Credits
-Bot made by Edan's Tech:
-- https://edanstech.pw / https://egddev.com
+Bot made by EGDDEV.COM:
+ - https://egddev.com
 
 Official Supporter:
 - https://molepatrol.club
