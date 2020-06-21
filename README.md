@@ -1,7 +1,7 @@
 # SpaceBot
 This bot adds the !space command that gets NASAs random image of the day and then posts it to your discord server
 
-This project was orignally made in Python but has now been moved to NodeJS, You can find all of the original files in the "OldPythonVersion" folder.
+This project was originally made in Python but has now been moved to NodeJS, You can find all of the original files in the "OldPythonVersion" folder.
 
 # Add the bot to your server:
 Add the bot to your discord server: https://discordapp.com/oauth2/authorize?client_id=437218042544390144&scope=bot
@@ -18,7 +18,7 @@ These are the commands for our hosted version they might be different if you hav
 - Discord.JS
 - Request
 
-# How install
+# How to install
 1. Make sure you have NodeJS and NPM installed
 2. Next download all the required files from here or https://egddev.com/spacebot and put them into a folder called SpaceBot and enter it
 3. Now install Discord.JS and Request by running the following commands:
