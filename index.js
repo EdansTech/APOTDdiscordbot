@@ -1,5 +1,5 @@
 //     All config is now in the config.json file.
-//     Edan's Tech / 2020
+//     EGDDEV.COM / 2021
 //     https://egddev.com/spacebot
 const Discord = require('discord.js');
 const request = require('request');
@@ -24,10 +24,8 @@ client.on('message', message => {
         if(message.content.startsWith(`${prefix}space`)) {
                 request(requestoptions, function(err, res, body) {
                         let json = JSON.parse(body);
-                        message.channel.send("Title: " + json.title);
-                        message.channel.send("Explanation: " + json.explanation);
-                        message.channel.send(json.url);
-                        message.channel.send("Last updated: " + json.date);
+                        message.channel.send("Title: " + json.title + "\n" + "Explanation: " + json.explanation + "\n" + json.url);
+                    	message.channel.send("Last updated: " + json.date)
                         console.log("Image posted was last updated: " + json.date);
                 });
         }
