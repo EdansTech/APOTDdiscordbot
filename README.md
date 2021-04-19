@@ -30,7 +30,7 @@ These are the commands for our hosted version they might be different if you hav
 
 # Rights
 
-You are allowed to rename, rebrand etc as long as credit to us (meaning edanstech.pw) is given and you do not claim this work to be yours.
+You are allowed to rename, rebrand etc as long as credit to us (meaning egddev.com) is given and you do not claim this work to be yours.
 This bot also must not be used commercially.
 
 # Credits
